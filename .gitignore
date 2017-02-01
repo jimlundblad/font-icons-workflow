@@ -1,1 +1,5 @@
 node_modules
+assets/icons
+src/css
+src/fonts
+assets/*.html

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         shell: {
             exportIcons: {
-                command: 'sketchtool export slices assets/icons.sketch --output=assets/icons/'
+                command: 'sketchtool export slices assets/incharge.sketch --output=assets/icons/'
             }
         },
         webfont: {
@@ -28,7 +28,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-webfont');
     grunt.loadNpmTasks('grunt-shell');
-
     grunt.registerTask('default', [ 'shell:exportIcons', 'webfont:icons' ]);
 
 };

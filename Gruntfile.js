@@ -9,17 +9,17 @@ module.exports = function(grunt) {
         webfont: {
             icons: {
                 src: 'assets/icons/*.svg',
-                dest: 'src/fonts/',
-                destCss: 'src/css/',
+                dest: '../assets/fonts/',
+                destCss: '../assets/scss/incharge/',
                 options: {
-                    font: 'icons',
+                    font: 'incharge-icons',
                     fontHeight: 96,
                     normalize: false,
                     ascent: 84,
                     descent: 12,
                     destHtml: 'assets/',
                     templateOptions: {
-                        classPrefix: 'icon-'
+                        classPrefix: 'incharge-icons-'
                     }
                 }
             }

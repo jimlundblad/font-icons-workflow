@@ -8,16 +8,20 @@ module.exports = function(grunt) {
         },
         webfont: {
             icons: {
+
                 src: 'assets/icons/*.svg',
                 dest: '../assets/fonts/',
-                destCss: '../assets/scss/incharge/',
+                destScss: '../assets/scss/foundation/components/',
                 options: {
+                    baseClass: 'iconography',
                     font: 'incharge-icons',
                     fontHeight: 96,
                     normalize: false,
                     ascent: 84,
                     descent: 12,
                     destHtml: 'assets/',
+                    stylesheets: ['scss'],
+                    relativeFontPath: '/assets/fonts',
                     templateOptions: {
                         classPrefix: 'incharge-icons-'
                     }
